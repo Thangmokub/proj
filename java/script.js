@@ -1,8 +1,15 @@
 const abt = document.querySelector("#abtme");
 const hide = document.querySelector("#hide");
 const hide1 = document.querySelector("#hide1");
+const hide2 = document.querySelector("#hide2");
 const unhide = document.querySelector("#unhide");
+const unhide1 = document.querySelector("#unhide1");
+const unhide2 = document.querySelector("#unhide2");
+
+
 const achive = document.querySelector("#achme");
+const contact = document.querySelector("#contactt");
+const phone = document.querySelector("#phone");
 console.log(abt);
 const print = console.log;
 console.log("ab")
@@ -20,5 +27,16 @@ achive.addEventListener("dblclick",()=> {
 })
 unhide1.addEventListener("click",()=> { 
     hide1.classList.add("hidden");
+    console.log("dbclick");
+})
+contact.addEventListener("dblclick",()=> { 
+    window.location.href = "https://www.instagram.com/___bbestt/";
+})
+phone.addEventListener("dblclick",()=> { 
+    hide2.classList.remove("hidden");
+    console.log("dbclick");
+})
+unhide2.addEventListener("click",()=> { 
+    hide2.classList.add("hidden");
     console.log("dbclick");
 })

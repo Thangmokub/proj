@@ -19,7 +19,7 @@ li{
     );
     border-top: 1px solid #5998ff;
     border-bottom: 1px solid #042b87;
-    height: 40px;
+    height: 60px;
     bottom: 0;
     position: fixed;
     left: 0;
@@ -79,6 +79,9 @@ li{
 .unhide{
     visibility:visible;
 }
+.sizeig{
+    border-radius: 10px;
+}
 .box{
     background-color: rgba(65,125,239);
     border: 2px solid #5998ff;    
@@ -97,6 +100,13 @@ li{
     justify-content: center;
 }
 .contactinfo{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.phoneee{
     position: absolute;
     width: 100vw;
     height: 100vw;
