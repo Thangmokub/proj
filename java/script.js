@@ -5,11 +5,14 @@ const hide2 = document.querySelector("#hide2");
 const unhide = document.querySelector("#unhide");
 const unhide1 = document.querySelector("#unhide1");
 const unhide2 = document.querySelector("#unhide2");
-
+const unhide3 = document.querySelector("#unhide3");
+const hide3 = document.querySelector("#unhide3");
 
 const achive = document.querySelector("#achme");
 const contact = document.querySelector("#contactt");
 const phone = document.querySelector("#phone");
+const email = document.querySelector("#email");
+
 console.log(abt);
 const print = console.log;
 console.log("ab")
@@ -38,5 +41,13 @@ phone.addEventListener("dblclick",()=> {
 })
 unhide2.addEventListener("click",()=> { 
     hide2.classList.add("hidden");
+    console.log("dbclick");
+})
+email.addEventListener("dblclick",()=> { 
+    hide3.classList.remove("hidden");
+    console.log("dbclick");
+})
+unhide3.addEventListener("click",()=> { 
+    hide3.classList.add("hidden");
     console.log("dbclick");
 })

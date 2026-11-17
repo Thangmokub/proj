@@ -113,6 +113,13 @@ li{
     display: flex;
     justify-content: center;
 }
+.emailll{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
 .nav{
     background-color: rgba(65,125,239);
     height: 30px;
