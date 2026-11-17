@@ -1,0 +1,193 @@
+.font{
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+}
+.bar{
+
+    background: linear-gradient(
+        180deg,
+        #3b80f7 0%,
+        #246ae5 12%,
+        #0b51d4 25%,
+        #0847c4 65%,
+        #073eb3 92%,
+        #05339e 100%
+    );
+    border-top: 1px solid #5998ff;
+    border-bottom: 1px solid #042b87;
+    height: 40px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+}
+.folder{
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+.bx{
+    display: flex;
+    bottom: 0;
+    position: fixed;
+}
+.abtme{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+.font-abt{
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -2px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+.folder-row{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    text-align: center;
+}
+.achievementHov{
+    background-color: #316AC5;
+    
+}
+.hidden{
+    visibility: hidden;
+}
+.unhide{
+    visibility:visible;
+}
+.box{
+    background-color: rgba(65,125,239);
+    border: 2px solid #5998ff;    
+    height: 600px;
+    width: 600px;
+    display: flex;
+    position: relative;
+    top: 5%;
+    flex-direction: column;
+}
+.info{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.contactinfo{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    background-color: rgba(65,125,239);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.body{
+    background-color: rgb(227, 227, 227);
+    border: wheat 1px solid;
+    height: 700px;
+    width: 100%;
+}
+.boxnav{
+    background-color:red;
+    border: white 2px solid;
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 13px;  
+    margin-right: 5px;  
+}
+.file{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.imgabt{
+    height: 200px;
+    width: 200px;
+    margin-left: 32%;
+    margin-top: 5%;
+    border: rgba(65,125,239) 2px solid;
+    border-radius: 10px;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+    
+}
+.abthead{
+    margin-top: -5px;
+    margin-left: 37%;
+}
+.liinfo{
+    margin-top: -10px;
+    margin-left: 15%;
+    font-size: 25px;
+}
+
+/*
+Source - https://stackoverflow.com/a/60787376
+Posted by User Rebo, modified by community. See post 'Timeline' for change history
+Retrieved 2026-11-17, License - CC BY-SA 4.0
+*/
+:root{
+    --overlay-color-1: #83d5d6;
+    --overlay-color-2: rgba(0, 128, 255, 1);
+    --anim-duration: 2s;
+}
+
+#gradient {
+    opacity: 0.8;
+    background: none;
+}
+
+#gradient:after,
+#gradient:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#gradient:before {
+    background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+}
+
+#gradient:after {
+    background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+}
+
+@keyframes OpacityAnim {
+    0%{opacity: 1.0}
+    100%{opacity: 0.0}
+}
