@@ -6,7 +6,7 @@ const unhide = document.querySelector("#unhide");
 const unhide1 = document.querySelector("#unhide1");
 const unhide2 = document.querySelector("#unhide2");
 const unhide3 = document.querySelector("#unhide3");
-const hide3 = document.querySelector("#unhide3");
+const hide3 = document.querySelector("#hide3");
 
 const achive = document.querySelector("#achme");
 const contact = document.querySelector("#contactt");
