@@ -69,9 +69,8 @@ li{
 .center{
     text-align: center;
 }
-.achievementHov{
+.achievementHov:hover{
     background-color: #316AC5;
-    
 }
 .hidden{
     visibility: hidden;
